@@ -1,0 +1,66 @@
+# vim
+sudo apt-get install vim
+
+# tex:
+sudo apt-get install texlive-full
+sudo apt-get install texstudio
+
+# psensors:
+sudo apt-get install lm-sensors
+sensors-detect
+sensors
+sudo apt-get install psensors
+
+# mono:
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb http://download.mono-project.com/repo/ubuntu xenial main" | sudo tee /etc/apt/sources.list.d/mono-official.list
+sudo apt-get update
+sudo apt-get install mono-devel
+
+# mono-develop:
+sudo apt-add-repository ppa:alexlarsson/flatpak
+sudo apt-get update
+sudo apt-get install flatpak
+flatpak install --user --from https://download.mono-project.com/repo/monodevelop.flatpakref
+
+# python:
+sudo apt-get install python-pip
+sudo apt-get install python3-pip
+pip install --upgrade pip
+pip3 install --upgrade pip
+
+pip3 install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+
+
+# steam:
+sudo apt-get update
+sudo apt-get install steam
+# icon is outdated??
+
+# vlc:
+sudo apt-get install vlc
+# sudo apt-get install browser-plugin-vlc
+
+# virtualbox:
+# add the following to /etc/apt/sources.list: "deb http://download.virtualbox.org/virtualbox/debian xenial contrib"
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install virtualbox-5.1
+sudo apt-get install dkms
+sudo apt-get install virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+
+
+# pinta:
+sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
+sudo apt-get update
+sudo apt-get install pinta
+
+# gparted
+sudo apt-get install gparted
+
+# haskell
+sudo apt-get install haskell-platform
+
+# dos2unix
+sudo apt-get install dos2unix

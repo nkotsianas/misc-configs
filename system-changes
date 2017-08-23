@@ -1,0 +1,17 @@
+added ~/.vimrc
+
+edited ~/.bashrc
+edited ~/.zshrc
+
+# Keymap changes:
+
+# Changed keymaps to invert Shift behavior for number row and semi-/colon
+# (ie special characters are easier to type w/o shift)
+# Second one changes capslock to escape
+# Note that this only changes keys in X
+edited /usr/share/X11/xkb/symbols/us from us.orig
+edited /usr/share/X11/xkb/symbols/pc from pc.orig
+
+# Did the same changes for virtual consoles (TTYs):
+created ~/keymaps/*
+edited /etc/rc.local

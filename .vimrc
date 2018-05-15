@@ -1,3 +1,7 @@
+" Nick's ~/.vimrc
+" See "https://github.com/nkotsianas/misc-linux/blob/master/.vimrc".
+" 
+" 
 " 2017-12-27 edit:
 " Many updates and good practices taken from Bram's defaults.vim
 " that you get from downloading from vim.org.
